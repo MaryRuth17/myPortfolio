@@ -1,83 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mary Ruth</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <!-- Loading Animation -->
+    <div id="loading">
+        <div class="pixel-loader"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav id="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#skills">Skills</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#experience">Experience</a></li>
+            <li class="nav-item"><a href="#ratings">Rate Me</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
     <header>
-        <div class="pixel" style="top:10%; left:10%;">⭐</div>
-        <div class="pixel" style="top:20%; right:15%;">🍄</div>
-        <div class="pixel" style="bottom:15%; left:20%;">♥</div>
-        <div class="pixel" style="bottom:10%; right:10%;">⚡</div>
-        <h1>♥ Mary Ruth Relator ♥</h1>
+        <h1>Mary Ruth Relator</h1>
         <p>Web Developer | Journalist | Academic Achiever</p>
     </header>
 
-    <div id="center-title">
-        <section id="about">
-            <h2>About Me</h2>
-        </section>
-    </div>   
-
-    <div id="about-container">
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="content">
-                <p>Hi, I'm ...</p>
+    <!-- About Section -->
+    <section id="about">
+        <div id="about-container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>Hi, I'm Mary Ruth! I'm a passionate web developer with a background in journalism and a love for creative coding. My unique combination of technical skills and storytelling ability allows me to create engaging, user-friendly web experiences that stand out.</p>
+                <p>When I'm not coding, you can find me writing articles, exploring new technologies, or working on academic research projects. I believe in continuous learning and pushing the boundaries of what's possible on the web.</p>
             </div>
-        </section>
-        <img src="images/my_pic.jpg" alt="Your Profile Picture" width="200">
-    </div>    
-    
-    <section id="skills">
-        
-        <h2>skills</h2>
-        <div class="content">
-            <h3>skills</h3>
-            <p>Description of your skills.</p>
+            <img src="images/my_pic.jpg" alt="Mary Ruth Relator" width="200">
         </div>
     </section>
 
+    <!-- Skills Section -->
+    <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <!-- Web Development -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front skill-category">
+                    <h3>Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Web Development</h3>
+                    <p>I build fast, responsive, and interactive websites using modern web technologies like React and Node.js, with attention to performance and accessibility.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Journalism -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front skill-category">
+                    <h3>Journalism</h3>
+                    <ul class="skill-list">
+                        <li>Content Writing</li>
+                        <li>Editing & Proofreading</li>
+                        <li>Research</li>
+                        <li>Interviewing</li>
+                        <li>AP Style</li>
+                    </ul>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Journalism</h3>
+                    <p>I craft compelling stories, conduct deep research, and adhere to industry standards like AP Style for clean, professional reporting.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Design -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front skill-category">
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li>UI/UX Design</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Figma</li>
+                        <li>Pixel Art</li>
+                        <li>Typography</li>
+                    </ul>
+                </div>
+                <div class="flip-card-back">
+                    <h3>Design</h3>
+                    <p>I design intuitive interfaces and pixel-perfect graphics using tools like Figma and Adobe Suite, blending usability with visual storytelling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
-        <div class="content">
-            <h3>Project</h3>
-            <p>here is some...</p>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Retro News Portal</h3>
+                <p>A news website with a nostalgic 8-bit design that presents current events in a unique, engaging format. Combines my journalism and web development skills.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Pixel Art Generator</h3>
+                <p>An interactive web application that allows users to create their own pixel art designs and export them as PNG images or CSS code.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Academic Research Database</h3>
+                <p>A searchable database of academic papers and resources with advanced filtering options, designed for researchers and students.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
         </div>
     </section>
 
+    <!-- Experience Section -->
+<section id="experience">
+    <h2>Experience</h2>
+    <div class="experience-timeline">
+        <div class="experience-item">
+            <h3>Front-End Developer – PixelX Studio</h3>
+            <p><strong>2023–2025</strong> — Developed interactive websites with pixel-art style, optimized for accessibility and performance.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Journalism Intern – Daily Digital</h3>
+            <p><strong>2022–2023</strong> — Wrote feature stories, managed online news content, and contributed to digital redesign efforts.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Student Research Assistant</h3>
+            <p><strong>2021–2022</strong> — Assisted in publishing academic papers and built a research archive web system.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Ratings Section -->
     <section id="ratings">
-        <div class="rating">
-            <input type="radio" id="star-1" name="star-radio" value="star-1">
-            <label for="star-1">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-            </label>
-            <input type="radio" id="star-2" name="star-radio" value="star-1">
-            <label for="star-2">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-            </label>
-            <input type="radio" id="star-3" name="star-radio" value="star-1">
-            <label for="star-3">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-            </label>
-            <input type="radio" id="star-4" name="star-radio" value="star-1">
-            <label for="star-4">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-            </label>
-            <input type="radio" id="star-5" name="star-radio" value="star-1">
-            <label for="star-5">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
-            </label>
+        <h2>Rate My Portfolio</h2>
+        <div class="rating-container">
+            <p>How would you rate my portfolio website?</p>
+            <div class="rating">
+                <input type="radio" id="star-5" name="star-radio" value="5">
+                <label for="star-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <input type="radio" id="star-4" name="star-radio" value="4">
+                <label for="star-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <input type="radio" id="star-3" name="star-radio" value="3">
+                <label for="star-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <input type="radio" id="star-2" name="star-radio" value="2">
+                <label for="star-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+                <input type="radio" id="star-1" name="star-radio" value="1">
+                <label for="star-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path pathLength="360" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+                </label>
+            </div>
+            <div id="rating-value">Your rating: Not rated yet</div>
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
         <h2 class="pixel-text">CONNECT WITH ME!</h2>
         <ul class="social-list">
@@ -118,10 +222,15 @@
             </a>
           </li>
         </ul>
-      </section>
+    </section>
     
     <footer>
-        <p> liked my website? blahblah...</p>
+        <p>Liked my website? Feel free to reach out for collaborations or just to say hello!</p>
     </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top">↑</button>
+    
+    <script src="script.js"></script>
 </body>
 </html>
